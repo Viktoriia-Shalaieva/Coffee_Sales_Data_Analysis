@@ -1,5 +1,5 @@
 ## Coffee Sales Data Analysis
-![Alt text](coffee_cup.png)
+![Alt text](image.png)
 
 ### Overview
 This project involves the analysis of coffee sales data collected from a vending machine. The dataset, provided by the author, is part of an initiative to offer open data to the community. The main objective of this project is to analyze purchasing patterns, sales trends, and customer preferences related to coffee products. By leveraging this dataset, actionable insights can be uncovered to inform business decisions and improve customer satisfaction.
