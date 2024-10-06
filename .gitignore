@@ -1,12 +1,19 @@
-# Installer logs
+# Ignore the project directory for IntelliJ IDEA
+.idea/
+
+# Ignore the directory for the Python virtual environment
+venv/
+
+# Installer logs for Python
 pip-log.txt
+# Directory that may be created when uninstalling packages
 pip-delete-this-directory.txt
 
-# Jupyter Notebook
+# Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints
 
-# VSCode settings
+# Ignore settings for Visual Studio Code
 .vscode/
 
-# Local History for Visual Studio Code
+# Ignore local history for Visual Studio Code
 .history/
