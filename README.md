@@ -1,83 +1,52 @@
-## Coffee Sales Data Analysis
+# Coffee Sales Dashboard
 ![Alt text](image.png)
 
-### Overview
-This project involves the analysis of coffee sales data collected from a vending machine. The dataset, provided by the author, is part of an initiative to offer open data to the community. The main objective of this project is to analyze purchasing patterns, sales trends, and customer preferences related to coffee products. By leveraging this dataset, actionable insights can be uncovered to inform business decisions and improve customer satisfaction.
+## Overview
+This project showcases an interactive and visually engaging dashboard for analyzing coffee sales data collected from a vending machine. The dataset, provided as part of an open data initiative on [Kaggle](https://www.kaggle.com/datasets/ihelon/coffee-sales/data), offers insights into revenue, unit sales, and sales trends categorized by factors such as payment type, weekday, hour, and coffee type. The main objective is to uncover purchasing patterns and customer preferences, providing actionable insights to optimize sales strategies and enhance customer satisfaction.
+ 
+## Key Features
 
-The dataset for this analysis was obtained from [Kaggle](https://www.kaggle.com/datasets/ihelon/coffee-sales/data).
+### **1. Dashboard Overview**
+- **Revenue and Units Sold Overview:** Displays total revenue (`46.87K`) and total units sold (`1,464`) with historical trends.
+- **Monthly Revenue and Quantity Trends:** Interactive line charts highlighting monthly performance.
+- **Revenue and Quantity by Payment Type:** Breakdown of sales data by payment method (cash and card).
 
-### Project Goals
-The primary goals of this project are:<br> 
-- **Analyze Sales Data:** Explore the dataset to understand how different types of coffee are sold, the impact of payment methods, and sales distribution over time.
-- **Identify Customer Preferences:** Determine which coffee products are most popular among customers and identify patterns in purchasing behavior.
-- **Develop Visualizations:** Create clear and informative visualizations to present the findings, making them accessible for stakeholders.
+### **2. Weekday and Hourly Analysis**
+- **Top Weekday by Units Sold:** Identifies `Tuesday` as the best-performing day with an average of `237` units sold.
+- **Top Hour by Units Sold:** Pinpoints `10 AM` as the busiest sales hour, with `159` units sold.
+- **Top 3 Coffee Types by Day of the Week:** Highlights the most popular coffee types (`Americano with Milk`, `Cappuccino`, and `Latte`) on each weekday.
+- **Top 3 Coffee Types by Hour of the Day:** Detailed analysis of sales patterns for the most popular coffee types across the day.
 
-### About the Dataset
-### Overview
-This dataset contains detailed records of coffee sales from a vending machine. It includes information on the type of coffee sold, the payment method used, the date and time of purchase, and the revenue generated. The data is comprehensive, providing a valuable resource for analyzing coffee sales trends.
+### **3. Coffee Type Analysis**
+- **Highest Revenue-Generating Coffee:** `Latte` leads with `24.33%` of total revenue.
+- **Best-Selling Coffee by Units Sold:** `Americano with Milk` accounts for `24.66%` of total sales.
+- **Revenue and Units Sold Breakdown by Coffee Type:** Visual and tabular representation of performance for all coffee types.
+- **Price by Coffee Type and Payment Type:** Comparison of prices by payment method.
 
-### Key Features of the Dataset
-- **Product Information:** Details about different types of coffee available in the vending machine are included in the dataset.
-- **Transaction Data:** Each record contains information on the transaction, including the payment method (cash or card) and the date and time of purchase.
-- **Sales Data:** Revenue generated from each sale is recorded, allowing for a detailed analysis of financial performance.
+## Data Insights
+- **Revenue Trends:** Revenue peaked in May 2024 (`9.06K`) and dropped significantly in September 2024 (`1.75K`). The significant drop in September is due to data being collected for only part of the month.
+- **Sales Trends:** Units sold show similar trends, with significant dips during off-peak months.
+- **Payment Preferences:** The majority of transactions were made using cards (`93.2%` of revenue).
+- **Popular Coffee Types:** `Latte` is the highest revenue generator, while `Americano with Milk` is the most frequently purchased.
+- **Customer Behavior:** Sales peak on weekdays (`Tuesday`) and during morning hours (`10 AM`).
 
-### Tools and Technologies
-- **Python:** Used for data cleaning, analysis, and visualization, with libraries such as pandas, seaborn, and matplotlib.
-- **Jupyter Notebook:** The analysis is conducted within a Jupyter Notebook (coffee_sales.ipynb) for interactive exploration of the data.
+## Technical Details
+The dashboard is created using:
+- **Power BI:** For data visualization and dashboard design.
+- **Data Sources:** Coffee sales dataset with fields such as revenue, units sold, payment type, date, time, and coffee type.
 
-### Project Approach
-**1. Data Collection and Integration** 
-- The dataset is sourced from vending machine records provided by the author.
-- The data is loaded into a Python environment using pandas for further analysis.
-  
-**2. Data Cleaning and Transformation** 
-- **Data Cleaning:** Missing values are handled and consistency in data formatting is ensured.
-- **Data Transformation:** The data is aggregated and prepared for analysis by creating new columns and filtering relevant information.
-  
-**3. Exploratory Data Analysis (EDA)** 
-- Exploratory data analysis is conducted to uncover trends and patterns in the data.
-- Statistical methods and visualizations are used to provide a comprehensive understanding of customer behavior and sales performance.
-  
-**4. KPI Identification** 
-- Key performance indicators (KPIs) such as total sales, average price, and product popularity are identified.
-- The focus is on metrics that are most relevant to understanding the vending machine's performance.
-  
-**5. Visualization Development**  
-Visualizations are created using seaborn and matplotlib to present the analysis findings:
-- **Bar Charts:** Display the sales volume of different coffee types by payment method.
-- **Line Plots:** Track sales trends over time to identify peak periods and seasonal effects.
-- **Heatmaps:** Show sales distribution across days of the week and hours of the day.
-- **Pie Charts:** Illustrate the revenue and sales contribution of each coffee type.
-  
-**6. Final Report and Presentation** 
-The analysis results, visualizations, and insights are compiled into a final report.
-Findings are presented to stakeholders, with recommendations for improving sales and enhancing customer satisfaction.
+## Conclusion
+This dashboard serves as a powerful tool for analyzing coffee sales trends, understanding customer preferences, and making data-driven decisions to optimize sales strategies. The insights can help businesses maximize revenue and improve operational efficiency.
 
-### Visualizations
-The project includes a variety of visualizations designed to make the analysis results easy to interpret:
+## Screenshots
+### Dashboard Overview
+![Dashboard Overview](1_dashboard_overview.png)
 
-**1. Bar Charts and Line Plots:**
-- **Sales by Coffee Type:** The number of sales for each coffee type, categorized by payment method (cash or card), is visualized.
-- **Revenue and number of Sales by Coffee Type:** The total revenue and  generated by each coffee type is shown.
-  
-**2. Heatmaps:**
-- **Sales by Day of the Week:** Sales patterns across different days of the week are highlighted.
-- **Hourly Sales Distribution:** Coffee sales by hour are analyzed to identify peak selling times.
-  
-**3. Pie Charts:**
-- **Revenue Share by Coffee Type:** The percentage of total revenue contributed by each coffee type is visualized.
-  
-**4. Time Series Analysis:**
-- **Monthly Sales Trends:** Changes in sales and revenue over time are monitored to detect seasonal variations.
-- **Coffee Price Over Time:** How the prices of different coffee types have evolved over time is examined.
+### Weekday and Hourly Analysis
+![Weekday and Hourly Analysis](2_weekday_and_hourly_analysis.png)
 
-### Expected Outcomes
-- **Improved Understanding of Sales Trends:** Insights into the popularity of different coffee products and how sales vary by time and payment method are gained.
-- **Data-Driven Decision Making:** The analysis is used to inform decisions about inventory management, pricing strategies, and marketing efforts.
-- **Enhanced Customer Experience:** Insights from customer preferences are leveraged to tailor offerings and improve overall customer satisfaction.
+### Coffee Type Analysis
+![Coffee Type Analysis](3_coffee_type_analysis.png)
 
-### Conclusion
-This project transforms raw data from a vending machine into valuable business insights. Through thorough analysis and visualization, a foundation is provided for making data-driven decisions that can optimize operations and increase profitability.
-
-### Contact Information
-If you have any questions or suggestions regarding this project, please feel free to contact viktoriia.shalaieva@gmail.com or create an issue in the repository.
+---
+For any inquiries or collaboration opportunities, please feel free to contact me via [LinkedIn](https://linkedin.com/in/viktoriia-shalaieva) or [email](mailto:viktoriia.shalaieva@gmail.com).
